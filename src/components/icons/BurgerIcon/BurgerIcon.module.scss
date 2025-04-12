@@ -1,0 +1,64 @@
+.burger {
+  // overflow: visible;
+  transform: rotate(180deg);
+  height: 30px;
+  cursor: pointer;
+}
+
+.bottom_bread_false {
+  display: block;
+  transition: transform 0.4s ease, opacity 0.1s ease;
+  transform: translateY(0);
+}
+
+.bottom_patty {
+  transform-origin: 77px 97px; /* Disminuí x y y ligeramente */
+  transition: transform 0.3s ease-in-out;
+
+  &_true {
+    transform: rotate(45deg);
+  }
+
+  &_false {
+    transform: rotate(0deg);
+  }
+}
+
+.upper_patty {
+  transform-origin: 86.169px 100.413px; /* Ajusta según sea necesario */
+  transition: transform 0.3s ease-in-out;
+
+  &_true {
+    transform: rotate(-45deg);
+  }
+
+  &_false {
+    transform: rotate(0deg);
+  }
+}
+
+.upper_bread {
+  transform-origin: 86.057px 109.324px; /* Ajusta si es necesario */
+  transition: transform 0.3s ease-in-out;
+
+  &_true {
+    transform: translateY(30px); /* Desplaza el pan superior hacia arriba */
+  }
+
+  &_false {
+    transform: translateY(-2px);
+  }
+}
+
+.bottom_bread {
+  transform-origin: 86.249px 82.449px; /* Aproximación del centro del pan inferior */
+  transition: transform 0.3s ease-in-out;
+
+  &_true {
+    transform: translateY(-30px);
+  }
+
+  &_false {
+    transform: translateY(0);
+  }
+}

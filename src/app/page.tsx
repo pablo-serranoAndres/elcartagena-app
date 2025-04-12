@@ -1,10 +1,9 @@
-import Navbar from "@/components/Navbar/Navbar";
+import BurgerIcon from "@/components/icons/BurgerIcon/BurgerIcon";
 import styles from "./page.module.scss";
 
 export default function HomePage() {
   return (
-    <div className={styles.container}>
-      <Navbar></Navbar>
+    <div className={styles.page}>
       <h1>elcartagenadelevante</h1>
     </div>
   );
