@@ -1,1 +1,2 @@
-export { default as BurgerIcon } from './BurgerIcon/BurgerIcon';
+export * from "./BurgerIcon/BurgerIcon";
+export * from "./CartIcon/CartIcon";

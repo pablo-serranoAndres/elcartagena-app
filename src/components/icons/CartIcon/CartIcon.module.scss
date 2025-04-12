@@ -1,0 +1,25 @@
+.container {
+  display: inline;
+  position: relative;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: pink;
+  position: absolute;
+  top: 19px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-title;
+  font-size: 12px;
+  border: solid black 1px;
+}
