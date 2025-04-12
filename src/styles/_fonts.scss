@@ -1,0 +1,13 @@
+$font-title: "Moon", sans-serif;
+$font-text: "Grotesk", sans-serif;
+$font-body: "Inter", sans-serif;
+
+@font-face {
+  font-family: "Moon";
+  src: url("/fonts/Moon/Moon.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("/fonts/Grotesk/Grotesk.ttf") format("truetype");
+}

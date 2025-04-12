@@ -1,0 +1,16 @@
+.featured {
+  &_container {
+    background-color: $background-color;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+  }
+
+  &_text {
+    font-family: $font-title;
+    font-size: $font-size-base;
+    color: $text-color;
+    text-align: center;
+  }
+}
