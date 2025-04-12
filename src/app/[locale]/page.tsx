@@ -9,13 +9,6 @@ export default function HomePage() {
   return (
     <div>
       <h1>{t("title")}</h1>
-      <button
-        onClick={() => {
-          redirect({ href: "/", locale: "en" });
-        }}
-      >
-        ES
-      </button>
       <Link href="/about">{t("about")}</Link>
     </div>
   );

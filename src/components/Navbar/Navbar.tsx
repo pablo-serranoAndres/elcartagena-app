@@ -1,8 +1,9 @@
 import { RiAccountCircleLine } from "react-icons/ri";
 import { CiShoppingCart } from "react-icons/ci";
+import { FeaturedText } from "../FeaturedText";
 import BurgerIcon from "../icons/BurgerIcon/BurgerIcon";
-import FeaturedText from "../FeaturedText/FeaturedText";
 import styles from "./Navbar.module.scss";
+import { Select } from "../Select";
 
 const Navbar = () => {
   return (
@@ -10,8 +11,10 @@ const Navbar = () => {
       <FeaturedText text={"Chapurrear!"} />
 
       <div className={styles.container}>
-        <BurgerIcon />
-
+        <div className={styles.menu}>
+          <BurgerIcon />
+          <Select variant="lang" />
+        </div>
         <h2>elcartagena</h2>
         <div className={styles.icons}>
           <RiAccountCircleLine fill="black" size={30}></RiAccountCircleLine>

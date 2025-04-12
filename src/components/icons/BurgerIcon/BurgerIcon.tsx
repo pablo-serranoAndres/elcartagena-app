@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import styles from "./BurgerIcon.module.scss";
-
 const BurgerIcon = () => {
   const [open, setOpen] = useState(false);
 

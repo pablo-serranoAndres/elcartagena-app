@@ -1,2 +1,1 @@
-export * from "./Featured.types";
-export * from "./FeaturedText";
+export { default as FeaturedText } from "./FeaturedText";

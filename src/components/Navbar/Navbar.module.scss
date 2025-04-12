@@ -6,7 +6,11 @@
   align-items: center;
   background-color: pink;
 }
-
+.menu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
 .icons {
   padding-right: 10px;
   display: flex;
