@@ -3,6 +3,7 @@ import { FeaturedText } from "../FeaturedText";
 import BurgerIcon from "../icons/BurgerIcon/BurgerIcon";
 import styles from "./Navbar.module.scss";
 import { Select } from "../Select";
+import Image from "next/image";
 import CartIcon from "../icons/CartIcon/CartIcon";
 
 const Navbar = () => {
@@ -15,7 +16,12 @@ const Navbar = () => {
           <BurgerIcon />
           <Select variant="lang" />
         </div>
-        <h2>elcartagena</h2>
+        <Image
+          src={"/images/logo.png"}
+          alt={""}
+          height={80}
+          width={252}
+        ></Image>
         <div className={styles.icons}>
           <RiAccountCircleLine fill="black" size={30}></RiAccountCircleLine>
           <CartIcon />

@@ -1,0 +1,31 @@
+.images {
+  display: flex;
+  width: 100%;
+
+  img {
+    scale: 0.55;
+  }
+
+  &_founds {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+    background-color: $primary-color;
+
+    button {
+      position: absolute;
+      margin: auto;
+    }
+  }
+  &_crafts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 80vh;
+    background-color: $secondary-color;
+  }
+}
