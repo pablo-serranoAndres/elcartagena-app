@@ -1,3 +1,5 @@
+export * from "./Button/Button";
+export * from "./Button/Button.types";
 export * from "./FeaturedText/Featured.types";
 export * from "./FeaturedText/FeaturedText";
 export * from "./Navbar/Navbar";

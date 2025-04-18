@@ -1,0 +1,77 @@
+.button {
+  text-decoration: none;
+  text-align: center;
+  color: $text-color-black;
+  cursor: pointer;
+  padding: 20px;
+  width: 300px;
+  font-family: $font-text;
+  font-size: $font-size-base;
+  letter-spacing: 0.25em;
+  font-size: 1.1em;
+
+  border: none;
+
+  &-filled {
+    font-weight: bold;
+    color: $text-color-white;
+  }
+
+  &-absolute {
+    position: absolute;
+  }
+  &-relative {
+    position: relative;
+  }
+  &-pink {
+    background-color: $primary-color;
+    &:hover {
+      // color: $text-color-black;
+      // background-color: $primary-color-soft;
+      border: solid 4px $background-color;
+    }
+  }
+  &-black {
+    border: solid 1px $text-color-black;
+    background-color: $background-color;
+    &:hover {
+      // background-color: $background-color-soft;
+      border: solid 4px $primary-color;
+    }
+  }
+  &-transparent {
+    background-color: transparent;
+    border: solid 3px $text-color-black;
+    box-sizing: border-box; // para respetar el tamaño con borde
+
+    &::after {
+      position: relative;
+      overflow: hidden;
+      padding: 12px 24px;
+      background-color: transparent; // color base
+      color: white;
+      font-size: 16px;
+      border: solid 3px $text-color-black;
+      cursor: pointer;
+      transition: color 0.4s ease;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $primary-color;
+      transition: width 0.4s ease;
+      z-index: 1;
+    }
+    &:hover::before {
+      width: 100%;
+    }
+    span {
+      position: relative;
+      z-index: 2;
+    }
+  }
+}
