@@ -1,2 +1,2 @@
-export * from "./BurgerIcon/BurgerIcon";
-export * from "./CartIcon/CartIcon";
+export * from './BurgerIcon/BurgerIcon';
+export * from './CartIcon/CartIcon';

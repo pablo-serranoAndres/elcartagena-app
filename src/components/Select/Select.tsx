@@ -37,4 +37,4 @@ const Select = ({ variant, options = [] }: SelectProps) => {
       );
   }
 };
-export default Select;
+export { Select };

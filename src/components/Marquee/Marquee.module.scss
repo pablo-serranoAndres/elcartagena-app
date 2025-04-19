@@ -1,0 +1,39 @@
+.marquee {
+  padding: 10px;
+  height: 30px;
+  align-items: center;
+  background-color: $primary-color;
+  color: $text-color-white;
+  font-family: $font-title;
+  display: flex;
+  letter-spacing: 0.15em;
+  gap: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  &_content {
+    display: flex;
+    gap: 20px;
+    animation: marquee 25s linear infinite;
+    position: absolute;
+
+    span {
+      max-width: 200px;
+      width: 200px;
+      max-height: 100%;
+      text-shadow: 1px 1px 2px black;
+      img {
+        width: 200px;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

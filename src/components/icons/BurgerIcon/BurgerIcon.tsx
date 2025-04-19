@@ -65,4 +65,4 @@ const BurgerIcon = () => {
   );
 };
 
-export default BurgerIcon;
+export { BurgerIcon };

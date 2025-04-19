@@ -1,8 +1,8 @@
 "use client";
 import "@/styles/globals.scss";
 import { useTranslations } from "next-intl";
+import { Button } from "@/components";
 import Image from "next/image";
-import Button from "@/components/Button/Button";
 import styles from "./page.module.scss";
 
 export default function HomePage() {
@@ -32,7 +32,7 @@ export default function HomePage() {
 
         <div className={styles.images_crafts}>
           <Image
-            src="/images/crafts1.png"
+            src="/images/crafts.png"
             alt="Crafts"
             width={1024}
             height={1536}
